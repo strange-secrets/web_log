@@ -1,0 +1,19 @@
+{
+  "name": "log",
+  "version": "0.0.1",
+  "description": "Simple log capture library for JavaScript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-ts": "tsc --declaration",
+    "lint": "tsc --noEmit && eslint \"**/*.{ts}\" --quiet --fix"
+  },
+  "main": "./dist/ss_log.js",
+  "types": "./dist/ss_log.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.11",
+    "typescript": "^3.7.2"
+  }
+}
