@@ -18,7 +18,7 @@ npm install --save @strangesecrets/web-log
 ## Usage
 You may import the library into your ES6+ project using:
 ```
-import * as SSLog from '@strangesecrets/ss-log'
+import * as SSLog from '@strangesecrets/web-log'
 ``` 
 The module includes typescript type definitions and may be immediately used with
 or without typescript.
@@ -32,10 +32,10 @@ SSLog.configure({
 });
 ```
 You may specify the following option data when invoking this method:
-uri Web address endpoint of your logging server.
 
 | Option      | Description                                                                 |
 | ----------- | --------------------------------------------------------------------------- |
+|uri          | Web address endpoint of your logging server.
 |sendDelay    | Frequency (in milliseconds) logging information will be sent to the server  |
 |sendCapacity | Maximum number of queued logs to cache before sending to the server         |
 |userName     | Name of the user to be associated with the logged information               |
