@@ -16,6 +16,7 @@ const DEFAULT_CONFIG: LogConfig = {
     userId: '',
     sessionId: '',
     version: '',
+    console: true,
     systemLog: true,
     captureErrors: true,
 };
@@ -26,19 +27,21 @@ let activeConfig = DEFAULT_CONFIG;
  * Prepares the logging module for use by the application.
  */
 export function configure(config: LogConfig): void {
+    activeConfig = Object.assign({}, DEFAULT_CONFIG, activeConfig, config);
+
     // Additional properties can go here
     if (typeof window === 'undefined') {
         // We are in node
     } else {
-        // We are in the browser
-        console.log = log;
-        console.warn = warn;
-        console.error = error;
+        if (activeConfig.console) {
+            // We are in the browser
+            console.log = log;
+            console.warn = warn;
+            console.error = error;
+        }
 
         window.onerror = globalErrorHandler;
     }
-
-    activeConfig = Object.assign({}, DEFAULT_CONFIG, activeConfig, config);
 }
 
 /**

@@ -19,6 +19,7 @@ export type LogConfig = {
     userId: string,
     sessionId: string,
     version: string,
+    console: boolean,       // True (default) to override the standard system log
     systemLog: boolean,     // True if logs should be forwarded to the default system log or False to be suppressed.
     captureErrors: boolean, // True if unhandled errors should be captured by the service
 };

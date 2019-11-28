@@ -10,7 +10,7 @@
   "main": "./dist/ss_log.js",
   "types": "./dist/ss_log.d.ts",
   "keywords": [],
-  "author": "",
+  "author": "nfactorial",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^12.12.11",

@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "amd",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "removeComments": true,
