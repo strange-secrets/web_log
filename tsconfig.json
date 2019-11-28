@@ -3,6 +3,7 @@
         "module": "amd",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
+        "declaration": true,
         "removeComments": true,
         "target": "es5",
         "noImplicitAny": true,
