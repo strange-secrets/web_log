@@ -7,11 +7,14 @@
     "build-ts": "tsc --declaration",
     "lint": "tsc --noEmit && eslint \"**/*.{ts}\" --quiet --fix"
   },
-  "main": "./dist/ss_log.js",
-  "types": "./dist/ss_log.d.ts",
+  "main": "dist/ss_log.js",
+  "types": "dist/ss_log.d.ts",
   "keywords": [],
   "author": "nfactorial",
   "license": "ISC",
+  "files": [
+    "dist/**/*"
+  ],
   "devDependencies": {
     "@types/node": "^12.12.11",
     "typescript": "^3.7.2"
