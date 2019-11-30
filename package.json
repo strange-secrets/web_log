@@ -2,10 +2,16 @@
   "name": "@strangesecrets/web_log",
   "version": "0.0.2",
   "description": "Simple log capture library for JavaScript",
+  "repository": "https://github.com/strange-secrets/web_log",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-ts",
+    "lint": "tsc --noEmit && eslint \"**/*.{ts}\" --quiet --fix",
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts",
     "build-ts": "tsc",
-    "lint": "tsc --noEmit && eslint \"**/*.{ts}\" --quiet --fix"
+    "prepublishOnly": "npm test",
+    "prepare": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "main": "dist/ss_log.js",
   "types": "dist/ss_log.d.ts",
@@ -16,7 +22,12 @@
     "dist/**/*"
   ],
   "devDependencies": {
-    "@types/node": "^12.12.11",
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.14",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.2"
   }
 }
