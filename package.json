@@ -1,6 +1,6 @@
 {
   "name": "@strangesecrets/web_log",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple log capture library for JavaScript",
   "repository": "https://github.com/strange-secrets/web_log",
   "scripts": {
