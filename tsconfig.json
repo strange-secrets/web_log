@@ -11,12 +11,6 @@
         "outDir": "dist",
         "outFile": "./dist/ss_log.js",
         "baseUrl": ".",
-        "paths": {
-            "*": [
-                "node_modules/*",
-                "src/types/*"
-            ]
-        }
     },
     "include": [
         "src/**/*"

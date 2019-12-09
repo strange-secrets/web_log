@@ -16,8 +16,8 @@
   "main": "dist/ss_log.js",
   "types": "dist/ss_log.d.ts",
   "keywords": [],
-  "author": "nfactorial",
-  "license": "ISC",
+  "author": "strangesecrets",
+  "license": "MIT",
   "files": [
     "dist/**/*"
   ],
